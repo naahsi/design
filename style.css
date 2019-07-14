@@ -1,20 +1,97 @@
+/* Universals */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-html, body {
-  background: black;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #181515;
+  color: #F5E8DA;
+  padding: 28px;
 }
 
-/* LOGO */
-#logo {
-  color: white;
+body > a > i {
+  position: fixed;
+  right: 28px;
 }
 
-/* CONTACT */
-.contact {
-  display: inline;
+#scroll-up {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+
+em {
+  font-family: 'DM Serif Text';
+  font-style: italic;
+  font-size: 1.3vw;
+  letter-spacing: 0.02em;
+}
+
+/* Home */
+ol > li:first-of-type {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+h1 {
+  width: 60%;
+  height: 100%;
+  font-size: 4.5vw;
+  line-height: 1.2em;
+  position: relative;
+}
+
+h1 > span {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+aside {
+  width: 25%;
+  margin-bottom: 56px;
+  text-align: right;
+}
+
+aside > p {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+/* Work */
+ul > li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10vh 56px 10vh 224px;
+}
+
+li > img {
+  width: 60%;
+  object-fit: contain;
+}
+
+li > p {
+  width: 10%;
+}
+
+h3 {
+  width: 20%;
+  text-align: right;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+h3 > a {
+  color: #D9674E;
 }
