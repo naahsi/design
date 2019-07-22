@@ -141,7 +141,7 @@ footer {
 }
 
 /* Mobile */
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media (max-width: 414px) and (orientation: portrait) {
   h1 {font-size: 8vw; width: 100%;}
   h3 {font-size: 2vw;}
 }
