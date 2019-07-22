@@ -143,5 +143,25 @@ footer {
 /* Mobile */
 @media (max-width: 414px) and (orientation: portrait) {
 
-  
+  p {font-size: 3.5vw;}
+
+  /* Intro */
+  h1 {font-size: 10vw; width: 75%;}
+
+  /* Skills + Contact */
+  h3 {font-size: 5vw;}
+
+  /* Work */
+  ol > li:last-of-type {flex-direction: column;}
+  h2 {font-size: 5vw;}
+  ul {padding-left: 0;}
+  ul li {flex-direction: column;}
+  aside {width: 100%; margin-bottom: 2vh;}
+  aside > p {text-align: right;}
+  li > a {width: 100%;}
+  img {box-shadow: none;}
+  img:hover {transform: none;}
+  .wip:hover {filter: none;}
+
+
 }
