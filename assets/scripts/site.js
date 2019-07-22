@@ -1,14 +1,12 @@
-/* Variables */
-const scrollUp = document.getElementById('scroll-up');
-const scrollUpY = scrollUp.offsetTop - 28;
-
 window.addEventListener('scroll', function() {
+  const wipStr = document.getElementById('wip-start');
+  const workHdSp = document.querySelectorAll('h2 > span')[0];
+  const sevVh = (window.innerHeight / 100) * 7;
+  const realTop = wipStr.offsetTop - sevVh;
 
-  if (document.body.scrollTop > scrollUpY) {
-    scrollUp.setAttribute('style', 'position: fixed; top: 28px; bottom: auto; transform: rotate(180deg);');
-    scrollUp.onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
+  if (realTop < document.body.scrollTop) {
+    workHdSp.setAttribute('style', 'opacity: 0.7;');
   } else {
-    scrollUp.setAttribute('style', 'position: absolute; left: 28px; bottom: 28px;');
+    workHdSp.setAttribute('style', 'opacity: 0;');
   }
-
 });
