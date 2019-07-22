@@ -10,3 +10,5 @@ window.addEventListener('scroll', function() {
     workHdSp.setAttribute('style', 'opacity: 0;');
   }
 });
+
+document.querySelectorAll('i')[0].onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
