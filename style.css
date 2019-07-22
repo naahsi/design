@@ -151,10 +151,12 @@ footer {
 
   /* Skills + Contact */
   h3 {font-size: 5vw;}
+  section + section {flex-direction: column; align-items: flex-end;}
+  h3 + p {margin-left: 0; text-align: right; margin-top: 2vh;}
 
   /* Work */
   ol > li:last-of-type {flex-direction: column;}
-  h2 {font-size: 5vw; margin-bottom: 5vh;}
+  h2 {font-size: 7vw; margin-bottom: 7vh;}
   ul {padding-left: 0;}
   ul li {flex-direction: column;}
   aside {width: 100%; margin-bottom: 3vh;}
