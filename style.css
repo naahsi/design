@@ -142,18 +142,31 @@ footer {
 
 /* Mobile */
 @media (max-width: 414px) and (orientation: portrait) {
+
+  p {font-size: 3vw;}
+  em {font-size: 3vw;}
+
+  /* Intro */
+  h1 {font-size: 14vw; width: 65%;}
+
   /* Structure */
-  ol > li {flex-direction: column;}
-  section {width: 100%;}
+  ol > li {flex-direction: column; min-height: calc(100vh - 56px);}
+  ol > li + li {margin-top: 0; padding-top: 5vh;}
+
+  /* Skills + Contact */
+  ol > li:nth-of-type(2) {flex-direction: column-reverse;}
+  section {width: 100%; flex-direction: column;}
+  h3 {font-size: 6vw;}
+  h3 + p {margin-left: 0; margin-top: 2vh;}
 
   /* Work */
   ul {padding-left: 0;}
   ul li {flex-direction: column;}
-  h2 {font-size: 6vw; margin-bottom: 4vh;}
-  aside {width: 100%; margin-bottom: 2vh;}
-  aside p {width: auto;}
+  h2 {font-size: 6vw; padding: 2vh 0; background: #0439D9; width: 100%; top: 0;}
+  aside {width: 100%; margin-bottom: 2vh; text-align: right; flex-direction: column; align-items: flex-end;}
+  aside p {width: 100%;}
   li > a {width: 100%;}
-
-  h1 {font-size: 12vw; width: 70%;}
-  h3 {font-size: 2vw;}
+  img {box-shadow: none;}
+  img:hover {transform: none;}
+  .wip:hover {filter: none;}
 }
