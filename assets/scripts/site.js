@@ -6,10 +6,10 @@ window.addEventListener('scroll', function() {
 
   if (realTop < document.body.scrollTop) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
-    console.log(sevVh);
+    console.log(document.body.scrollTop);
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
-    console.log(realTop);
+    console.log(document.body.scrollTop);
   }
 });
 
