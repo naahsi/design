@@ -6,11 +6,11 @@ window.addEventListener('scroll', function() {
 
   if (realTop < document.body.scrollTop) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
-    console.log(document.body.scrollTop);
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
-    console.log(document.body.scrollTop);
   }
+  
+  console.log(sevVh, realTop, document.body.scrollTop);
 });
 
 document.querySelectorAll('i')[0].onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
