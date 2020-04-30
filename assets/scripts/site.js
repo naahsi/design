@@ -6,6 +6,7 @@ window.addEventListener('scroll', function() {
 
   if (realTop < window.scrollY || window.pageYOffset) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
+    console.log('YAY');
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
   }
