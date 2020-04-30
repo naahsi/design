@@ -9,8 +9,6 @@ window.addEventListener('scroll', function() {
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
   }
-  
-  console.log(window.scrollY, window.pageYOffset, document.body.scrollTop);
 });
 
 document.querySelectorAll('i')[0].onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
