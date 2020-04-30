@@ -6,11 +6,9 @@ window.addEventListener('scroll', function() {
 
   if (realTop < window.scrollY) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
-    console.log('YAY');
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
   }
-  console.log(realTop, window.scrollY);
 });
 
 document.querySelectorAll('i')[0].onclick = () => window.scroll({ top: 0, behavior: 'smooth' });
