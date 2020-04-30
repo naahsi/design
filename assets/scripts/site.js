@@ -4,7 +4,7 @@ window.addEventListener('scroll', function() {
       sevVh = (window.innerHeight / 100) * 7,
       realTop = wipStr.offsetTop - sevVh;
 
-  if (realTop < window.scrollY || window.pageYOffset) {
+  if (realTop < window.scrollY) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
     console.log('YAY');
   } else {
