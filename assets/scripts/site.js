@@ -6,8 +6,10 @@ window.addEventListener('scroll', function() {
 
   if (realTop < document.body.scrollTop) {
     workHdSp.setAttribute('style', 'opacity: 0.7;');
+    console.log('working');
   } else {
     workHdSp.setAttribute('style', 'opacity: 0;');
+    console.log('not working');
   }
 });
 
