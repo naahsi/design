@@ -2,71 +2,90 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text:400i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="assets/scripts/smoothscroll.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="mobile.css">
   </head>
   <body>
-    <ol>
-      <li>
-        <h1>Hello, my name is Ishaan. I design and develop websites.</h1>
-      </li>
-      <li>
-        <section>
-          <h3><a href="mailto:ishaan.sinhaa@gmail.com">Get in touch!</a></h3>
-        </section>
-        <section>
-          <h3>Skills</h3>
-          <p>HTML5 • CSS3 • JavaScript ES6 • jQuery • Node.js • JSON • PHP • MySQL • Git • Squarespace • Wordpress • Adobe Creative Suite</p>
-        </section>
-      </li>
-      <li>
-        <h2>Work<span>s in progress</span></h2>
-        <ul>
-          <li>
-            <aside>
-              <em>fig. 01</em>
-              <p>The Ethnobotanical Assembly is an online ethnobotany jorunal based in the UK.</p>
-            </aside>
-            <a href="https://www.tea-assembly.com"><img src="assets/images/tea.png"></a>
-          </li>
-          <li>
-            <aside>
-              <em>fig. 02</em>
-              <p>Anthropolitan is UCL Anthropology's departmental magazine.</p>
-            </aside>
-            <a href="https://www.anthropolitanblog.wordpress.com"><img src="assets/images/anthropolitan.png"></a>
-          </li>
-          <li id="wip-start">
-            <aside>
-              <em>fig. 03</em>
-              <p>Eeling Ana Lee is a painter and sculptor from France.</p>
-            </aside>
-            <a><img src="assets/images/eeling.png" class="wip"></a>
-          </li>
-          <li>
-            <aside>
-              <em>fig. 04</em>
-              <p>Rebecca Lazarou is a phytochemist, healer, and wellness-advocate from the UK.</p>
-            </aside>
-            <a><img src="assets/images/rebecca.png" class="wip"></a>
-          </li>
-          <li>
-            <aside>
-              <em>fig. 05</em>
-              <p>Laura Alhach is a documentary filmmaker, and photographer from Colombia.</p>
-            </aside>
-            <a><img src="assets/images/laura.png" class="wip"></a>
-          </li>
-        </ul>
-      </li>
-    </ol>
-    <footer>
-      <i class="material-icons">arrow_upward</i>
-    </footer>
-    <script src="assets/scripts/site.js" charset="utf-8"></script>
+    <main>
+      <section id="welcome">
+        <h1><span>Hi,</span>I'm Ishaan. I design and develop websites. Have a look around.</h1>
+        <a href="#work" class="go to-work">
+          <svg viewBox="0 0 100 100" class="arrow">
+            <line x1="0" y1="0" x2="0" y2="100" />
+            <line x1="100" y1="0" x2="0" y2="100" />
+            <line x1="100" y1="100" x2="0" y2="100" />
+          </svg>
+          <svg viewBox="0 0 100 100" class="circle to-work">
+            <path id="circle" d="M-50,50a100,100 0 1,0 200,0a100,100 0 1,0 -200,0" />
+            <text dy="10">
+              <textPath xlink:href="#circle">
+                see my work • see my work • see my work •
+              </textPath>
+            </text>
+          </svg>
+        </a>
+      </section>
+      <section id="work">
+        <h2>Selected Works</h2>
+        <article>
+          <a href="https://www.tea-assembly.com" class="title"><img src="images/tea.png" alt=""></a>
+          <summary>
+            <p><a href="https://www.tea-assembly.com">The Ethnobotanical Assembly</a> is an online journal based in London.</p>
+          </summary>
+        </article>
+        <article>
+          <a href="http://eliteacademy.be" class="title"><img src="images/ea.png" alt=""></a>
+          <summary>
+            <p><a href="http://eliteacademy.be">Elite Academy</a> is a youth basketball academy from Antwerp.</p>
+          </summary>
+        </article>
+        <article>
+          <a href="https://eelinganalee.com" class="title"><img src="images/eeling.png" alt=""></a>
+          <summary>
+            <p><a href="https://eelinganalee.com">Eeling Ana Lee</a> is an artist living in Paris.</p>
+          </summary>
+        </article>
+        <hr>
+      </section>
+      <section id="contact">
+        <aside>
+          <h3 id="copy-email">Get in touch</h3>
+          <p id="copy-notification">(<span class="copy-click">click</span><span class="copy-tap">tap</span> to copy email address)</p>
+        </aside>
+        <div class="go to-top">
+          <svg viewBox="0 0 100 100" class="arrow">
+            <line x1="0" y1="100" x2="0" y2="0" />
+            <line x1="100" y1="100" x2="0" y2="0" />
+            <line x1="100" y1="0" x2="0" y2="0" />
+          </svg>
+          <svg viewBox="0 0 100 100" class="circle to-top">
+            <path id="circle" d="M-50,50a100,100 0 1,0 200,0a100,100 0 1,0 -200,0" />
+            <text dy="10">
+              <textPath xlink:href="#circle">
+                back to top • back to top • back to top •
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      let copy = document.getElementById('copy-email'),
+          notify = document.getElementById('copy-notification');
+
+      window.addEventListener('click', function(e) {
+        if (e.target == copy) {
+          navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
+          .then(() => {
+            notify.innerText = '[copied!]';
+          })
+          .catch(err => {
+            console.log('Email not copied', err);
+          });
+        }
+      });
+    </script>
   </body>
 </html>

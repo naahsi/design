@@ -1,0 +1,68 @@
+section {
+  padding: 64px;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+.circle.to-work:hover {
+  animation: marquee-cw 5000ms linear infinite;
+}
+
+.circle.to-top:hover {
+  animation: marquee-ccw 5000ms linear infinite;
+}
+
+.circle {
+  opacity: 0;
+}
+
+.circle:hover {
+  opacity: 1;
+}
+
+#work {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+h2 {
+  font-size: 2vw;
+  margin-bottom: 8vh;
+}
+
+article {
+  width: 22.5%;
+  height: 70vh;
+}
+
+.title {
+  height: 70%;
+}
+
+.title::before {
+  width: 20vw;
+  height: 20vw;
+}
+
+summary {
+  margin-top: 8vh;
+}
+
+summary p {
+  font-size: 1.5vw;
+}
+
+#work hr {
+  display: none;
+}
+
+#contact {
+  align-items: center;
+}
+
+.copy-tap {
+  display: none;
+}

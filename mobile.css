@@ -1,0 +1,68 @@
+section {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 8vw;
+}
+
+.circle.to-work {
+  animation: marquee-cw 5000ms linear infinite;
+}
+
+.circle.to-top {
+  animation: marquee-ccw 5000ms linear infinite;
+}
+
+#work {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+h2 {
+  font-size: 6vw;
+  margin-bottom: 12vh;
+}
+
+article {
+  width: 80%;
+  height: 70vh;
+  margin-bottom: 6vh;
+}
+
+.title {
+  height: 70%;
+}
+
+.title::before {
+  width: 50vw;
+  height: 50vw;
+}
+
+summary {
+  margin-top: 6vh;
+}
+
+summary p {
+  font-size: 4vw;
+}
+
+#work hr {
+  width: 100%;
+  height: 1px;
+  border-color: #595656;
+  opacity: 0.2;
+}
+
+#contact {
+  height: 50vh;
+}
+
+#contact aside {
+  width: 70%;
+}
+
+.copy-click {
+  display: none;
+}
