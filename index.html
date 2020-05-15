@@ -52,7 +52,7 @@
       </section>
       <section id="contact">
         <aside>
-          <h3 id="copy-email">Get in touch</h3>
+          <h3 id="copy-email"><input readonly="readonly" value="ishaan.sinhaa@gmail.com" type="text">Get in touch</input></h3>
           <p id="copy-notification">(<span class="copy-click">click</span><span class="copy-tap">tap</span> to copy email address)</p>
         </aside>
         <div class="go to-top">
@@ -83,7 +83,7 @@
             notify.innerText = '[copied!]';
           })
           .catch(err => {
-            console.log('Email not copied', err);
+            console.log('Email address not copied', err);
           });
         }
       };
