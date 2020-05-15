@@ -6,11 +6,15 @@ h1 {
   font-size: 8vw;
 }
 
-.circle.to-work {
+.go.to-work {
+  bottom: 128px;
+}
+
+.to-work .circle {
   animation: marquee-cw 5000ms linear infinite;
 }
 
-.circle.to-top {
+.to-top .circle {
   animation: marquee-ccw 5000ms linear infinite;
 }
 
