@@ -54,6 +54,7 @@
         <aside>
           <h3 id="copy-email">Get in touch</h3>
           <p id="copy-notification">(<span class="copy-click">click</span><span class="copy-tap">tap</span> to copy email address)</p>
+          <input type="text" name="" value="hello" contenteditable="true" readonly id="test">
         </aside>
         <div class="go to-top">
           <svg viewBox="0 0 100 100" class="arrow">
@@ -74,10 +75,11 @@
     </main>
     <script type="text/javascript">
       let copy = document.getElementById('copy-email'),
-          notify = document.getElementById('copy-notification');
+          notify = document.getElementById('copy-notification'),
+          test = document.getElementById('test');
 
       let clickCopy = function(e) {
-        if (e.target == copy) {
+        if (e.target == test) {
           navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
           .then(() => {
             notify.innerText = '[copied!]';
@@ -88,52 +90,8 @@
         }
       };
 
-      let clickToCopy = function(e) {
-        if (e.target == copy) {
-          function(tetete) {
-            let textArea;
-
-            function isiOS() {
-              return navigator.userAgent.match(/ipad|iphone/i);
-            }
-
-            function createTextArea(text) {
-              textArea = document.createElement('textArea');
-              textArea.readOnly = true;
-              textArea.contentEditable = true;
-              textArea.value = text;
-              document.body.appendChild(textArea);
-            }
-
-            function selectText() {
-    var range, selection;
-
-    if (isOS()) {
-      range = document.createRange();
-      range.selectNodeContents(textArea);
-      selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      textArea.setSelectionRange(0, 999999);
-    } else {
-      textArea.select();
-    }
-  }
-
-  function copyTo() {
-    document.execCommand('copy');
-    document.body.removeChild(textArea);
-  }
-
-  createTextArea(tetete);
-  selectText();
-  copyTo();
-          }
-        }
-      };
-
       window.addEventListener('click', clickCopy, false);
-      window.addEventListener('touchend', clickToCopy, false);
+      window.addEventListener('touchend', clickCopy, false);
     </script>
   </body>
 </html>
