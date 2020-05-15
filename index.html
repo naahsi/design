@@ -76,7 +76,7 @@
       let copy = document.getElementById('copy-email'),
           notify = document.getElementById('copy-notification');
 
-      window.addEventListener('click, touchend', function(e) {
+      window.addEventListener('click touchstart', function(e) {
         if (e.target == copy) {
           navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
           .then(() => {
