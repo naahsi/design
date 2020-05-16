@@ -6,7 +6,7 @@ let copy = document.getElementById('copy-email'),
 
 const clickCopy = (e) => {
   if (e.target == copy) {
-    navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
+    clipboard.writeText('ishaan.sinhaa@gmail.com')
     .then(() => {
       notify.innerText = '[copied!]';
     })
