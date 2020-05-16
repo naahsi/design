@@ -7,7 +7,7 @@ let copy = document.getElementById('copy-email'),
 
 // iOS copy solution
 if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-  notify.innerHTML = '[ <a href="#">ishaan.sinhaa@gmail.com</a> ]';
+  notify.innerHTML = '[ <a href="mailto:ishaan.sinhaa@gmail.com">ishaan.sinhaa@gmail.com</a> ]';
 }
 
 // Copy to clipboard
