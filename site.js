@@ -33,4 +33,8 @@ window.addEventListener('click', (e) => {
   goToWork(e);
   backToTop(e);
 });
-window.addEventListener('touchend', clickCopy, false);
+window.addEventListener('touchend', (e) => {
+  clickCopy(e);
+  goToWork(e);
+  backToTop(e);
+});
