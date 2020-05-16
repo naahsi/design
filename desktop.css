@@ -2,8 +2,13 @@ section {
   padding: 64px;
 }
 
+#welcome {
+  align-items: center;
+}
+
 h1 {
   font-size: 4vw;
+  width: 70%;
 }
 
 .to-work .circle:hover {
@@ -61,6 +66,10 @@ summary p {
 
 #contact {
   align-items: center;
+}
+
+h3 {
+  cursor: pointer;
 }
 
 .copy-tap {

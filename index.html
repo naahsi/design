@@ -54,7 +54,6 @@
         <aside>
           <h3 id="copy-email">Get in touch</h3>
           <p id="copy-notification">(<span class="copy-click">click</span><span class="copy-tap">tap</span> to copy email address)</p>
-          <input type="text" name="" value="hello" contenteditable="true" readonly id="test">
         </aside>
         <div class="go to-top">
           <svg viewBox="0 0 100 100" class="arrow">
@@ -75,8 +74,7 @@
     </main>
     <script type="text/javascript">
       let copy = document.getElementById('copy-email'),
-          notify = document.getElementById('copy-notification'),
-          test = document.getElementById('test');
+          notify = document.getElementById('copy-notification');
 
       let clickCopy = function(e) {
         if (e.target == test) {

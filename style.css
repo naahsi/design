@@ -26,15 +26,12 @@ section {
 
 #welcome {
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 h1 {
   font-weight: 300;
   line-height: 1.25em;
   letter-spacing: 0.01em;
-  width: 70%;
 }
 
 h1 span {
@@ -130,7 +127,7 @@ h2 {
 
 article:first-of-type .title::before {background: linear-gradient(#fdcb6e, #e17055);}
 article:nth-of-type(2) .title::before {background: linear-gradient(#ea8685, #786fa6);}
-article:last-of-type .title::before {background: linear-gradient(#35F3B9, #82ccdd);}
+article:last-of-type .title::before {background: linear-gradient(#B4BF5E, #63cdda);}
 
 .title img {
   width: 100%;
