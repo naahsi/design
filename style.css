@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ section {
   display: flex;
 }
 
+/* WELCOME */
 #welcome {
   height: 100vh;
 }
@@ -41,6 +43,7 @@ h1 span {
   font-weight: 700;
 }
 
+/* ARROWS */
 .go {
   position: absolute;
   bottom: 64px;
@@ -88,12 +91,13 @@ h1 span {
   letter-spacing: 0.033em;
 }
 
+/* WORK */
 h2 {
   width: 100%;
   letter-spacing: 0.01em;
   line-height: 1.25em;
   border-bottom: 2px solid;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
 }
 
 .title {
@@ -155,6 +159,7 @@ summary p a:hover {
   border-bottom: 1px solid;
 }
 
+/* CONTACT */
 #contact {
   display: flex;
 }
