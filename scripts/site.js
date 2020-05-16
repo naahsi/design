@@ -5,16 +5,20 @@ let copy = document.getElementById('copy-email'),
     toWork = document.querySelectorAll('.to-work path')[0],
     toTop = document.querySelectorAll('.to-top path')[0];
 
+// iOS copy solution
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  notify.innerHTML = '[ <a href="#">ishaan.sinhaa@gmail.com</a> ]';
+}
+
 // Copy to clipboard
 const clickCopy = (e) => {
   if (e.target == copy) {
     navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
     .then(() => {
-      notify.innerText = '[copied!]';
+      notify.innerText = '[ copied! ]';
     })
     .catch(err => {
-      console.log('Email address not copied', err);
-      notify.innerText = '[email address not copied]';
+      console.log('email address not copied', err);
     });
   }
 };
