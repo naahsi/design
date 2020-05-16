@@ -8,12 +8,13 @@ let copy = document.getElementById('copy-email'),
 // Copy to clipboard
 const clickCopy = (e) => {
   if (e.target == copy) {
-    clipboard.writeText('ishaan.sinhaa@gmail.com')
+    navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
     .then(() => {
       notify.innerText = '[copied!]';
     })
     .catch(err => {
       console.log('Email address not copied', err);
+      notify.innerText = '[email address not copied]';
     });
   }
 };
