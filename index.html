@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (min-width: 800px)" href="desktop.css">
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="mobile.css">
+    <script src="smoothscroll.js" charset="utf-8"></script>
   </head>
   <body>
     <main>
       <section id="welcome">
         <h1><span>Hi,</span>I'm Ishaan. I design and develop websites. Have a look around.</h1>
-        <a href="#work" class="go to-work">
+        <div class="go to-work">
           <svg viewBox="0 0 100 100" class="arrow">
             <line x1="0" y1="0" x2="0" y2="100" />
             <line x1="100" y1="0" x2="0" y2="100" />
@@ -26,7 +27,7 @@
               </textPath>
             </text>
           </svg>
-        </a>
+        </div>
       </section>
       <section id="work">
         <h2>Selected Works</h2>
@@ -72,24 +73,6 @@
         </div>
       </section>
     </main>
-    <script type="text/javascript">
-      let copy = document.getElementById('copy-email'),
-          notify = document.getElementById('copy-notification');
-
-      let clickCopy = function(e) {
-        if (e.target == test) {
-          navigator.clipboard.writeText('ishaan.sinhaa@gmail.com')
-          .then(() => {
-            notify.innerText = '[copied!]';
-          })
-          .catch(err => {
-            console.log('Email address not copied', err);
-          });
-        }
-      };
-
-      window.addEventListener('click', clickCopy, false);
-      window.addEventListener('touchend', clickCopy, false);
-    </script>
+    <script src="site.js" charset="utf-8"></script>
   </body>
 </html>
