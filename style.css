@@ -161,7 +161,7 @@ summary p a:hover {
 
 /* CONTACT */
 #contact {
-  display: flex;
+  flex-wrap: wrap;
 }
 
 #contact aside {
@@ -171,4 +171,9 @@ summary p a:hover {
 h3 {
   font-size: 8vw;
   line-height: 1.25em;
+}
+
+footer a {
+  border-bottom: 1px dotted;
+  transition: border-bottom 250ms ease-in-out;
 }
