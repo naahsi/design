@@ -85,35 +85,3 @@ h3 {
 .copy-tap {
   display: none;
 }
-
-footer {
-  width: 80%;
-  margin-top: 20vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer a:hover {
-  border-bottom: 1px solid;
-}
-
-.attr {
-  cursor: pointer;
-  font-variation-settings: 'wght' 400;
-  transition: font-variation-settings 250ms ease-in-out;
-}
-
-.attr-content {
-  display: none;
-  opacity: 0;
-  transition: opacity 250ms ease-in-out;
-}
-
-.attr-wrap:hover .attr {
-  font-variation-settings: 'wght' 700;
-}
-
-.attr-wrap:hover .attr-content {
-  opacity: 1;
-  display: inline;
-}

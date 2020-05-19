@@ -13,10 +13,6 @@ h1 {
   bottom: 128px;
 }
 
-.go.to-top {
-  bottom: 64px;
-}
-
 .to-work .circle {
   animation: marquee-cw 5000ms linear infinite;
 }
@@ -69,7 +65,7 @@ summary p {
 
 /* CONTACT */
 #contact {
-  height: 70vh;
+  height: 50vh;
 }
 
 #contact aside {
@@ -82,17 +78,4 @@ summary p {
 
 .copy-click {
   display: none;
-}
-
-footer {
-  width: 100%;
-  font-size: 0.8em;
-}
-
-.attr-wrap {
-  margin-bottom: 32px;
-}
-
-.attr {
-  font-variation-settings: 'wght' 700;
 }

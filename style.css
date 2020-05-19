@@ -172,8 +172,3 @@ h3 {
   font-size: 8vw;
   line-height: 1.25em;
 }
-
-footer a {
-  border-bottom: 1px dotted;
-  transition: border-bottom 250ms ease-in-out;
-}
