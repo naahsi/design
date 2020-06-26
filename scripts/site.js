@@ -49,3 +49,17 @@ window.addEventListener('touchend', (e) => {
   goToWork(e);
   backToTop(e);
 });
+
+var myHeaders = new Headers();
+myHeaders.append("x-api-key", "391bdda2-de3f-4a9b-b870-4fa54a3570eb");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://www.shelterluv.com/api/v1/animals", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
