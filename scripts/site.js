@@ -1,18 +1,3 @@
-var requestOptions = {
-      method: 'GET',
-      headers: {
-        'X-API-Key': '391bdda2-de3f-4a9b-b870-4fa54a3570eb'
-      },
-      redirect: 'follow',
-      mode: 'cors',
-      credentials: 'include'
-    };
-
-    fetch("https://www.shelterluv.com/api/v1/animals", requestOptions)
-      .then(response => response.text())
-      .then(result => console.log(result))
-      .catch(error => console.log('error', error));
-
 // Variables
 let copy = document.getElementById('copy-email'),
     notify = document.getElementById('copy-notification'),
